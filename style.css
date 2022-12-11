@@ -36,9 +36,9 @@ main {
     
 }
 main p {
-    margin: 5px;
+    margin: 10px;
     color: var(--secondary-color);
-    font-size: large;
+    font-size:larger;
 }
 .glass {
     /* From https://css.glass */
@@ -105,13 +105,20 @@ footer a {
         width: 100%;
         display: flex;
         align-items: center;
+        justify-content: center;
 
     }
 
     .info {
         border-left: none;
-        border-top: 0.5px solid #d9d9d965;
+        border-top: 0.5px solid #d9d9d954;
         margin-inline: 10%;
+        margin-top: 10px;
+    }
+
+    #mainlogo {
+        width: 80%;
+        margin-top: 10px;
     }
 
 }
