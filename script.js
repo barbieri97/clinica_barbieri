@@ -1,15 +1,15 @@
 let nav = document.querySelector('nav')
 let menu = document.querySelector('menu');
-let menuTransparent = document.querySelector('.menutransparent');
+// let menuHeader = document.querySelector('.menuimg');
 
 function openmenu(){
-    menu.style.display = 'flex';
-    menuTransparent.style.display = 'block'
-    nav.style.cursor = 'auto'
+    menu.style.left = '0vw';
+    nav.style.cursor = 'auto';
+    // menuHeader.style.width = '70px';
 }
 
 function closemenu() {
-    menu.style.display = 'none'
-    menuTransparent.style.display = 'none'
-    nav.style.cursor = 'pointer'
+    menu.style.left = '100vw';
+    // nav.style.cursor = 'pointer';
+    // menuHeader.style.width = '0%';
 }
