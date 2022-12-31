@@ -5,28 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Clinica Barbieri</title>
     <link rel="icon" type="image/png" sizes="16x16" href="assets/b_favico_white.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/styles/base.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   </head>
   <body>
+    <div id="preloader">
+            <img src="/assets/preload.gif" alt="preloader">
+    </div>
     <header>
         <a href="/"><img src="assets/logo_claro_sem_fundo.png" alt="logo" class="logonav"></a>
         <nav>
-            <img src="assets/icon_menu_dark.png" alt="menu" class="menumob" onclick="openmenu()">
-            
-            <div class="menutransparent" onclick="closemenu()">
-            </div>
-                <menu>
-                    <a href="/">Home</a>
-                    <a href="/sobre.html">Sobre</a>
-                    <a href="https://api.whatsapp.com/send?phone=5511993971098&text=Olá, Gostaria de mais informações.">Agende sua consulta</a>
-                    <a href="/blog.html">Blog</a>
-                    <a href="/login.html">Login</a>
-                    <a href="/signup.html">Cadastre-se</a>
-                </menu>
+            <img src="assets/icon_menu_dark.png" alt="menu" class="menumob">
         </nav>
     </header>
     <main>
-        <h1>Página em construção!</h1>
     </main>
     <footer>
         <section class="despedida">
@@ -43,6 +35,7 @@
         </section>
         <a href="https://icons8.com/" class="icons8">icons by icons8</a>
     </footer>
-    <script src="script.js"></script>
+    <script src="/scripts/menu.js"></script>
+    <script src="/scripts/loader.js"></script>
   </body>
 </html>

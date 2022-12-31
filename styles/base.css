@@ -20,6 +20,19 @@
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
+#preloader {
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: var(--white);
+    z-index:999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s;
+}
 
 header {
     height: 60px;
@@ -44,75 +57,12 @@ nav {
     margin-right: 20px;
 }
 
-/* .menutransparent {
-    display: none;
-    background-color: var(--black-transparent);
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100%;
-} */
-
-menu {
-    padding-top: 10px;
-    display: flex;
-    align-items: center;
-    justify-content:start;
-    flex-direction: column;
-    position: fixed;
-    top: 0;
-    left: 100vw;
-    width: 100%;
-    height: 100vh;
-    background-color: var(--color1);
-
-    /* animation: moveToRight 1s ease-in-out; */
-}
-
-.effect {
-    transition: left 1s;
-}
-
-menu a {
-    font-size: larger;
-    width: 70%;
-    text-decoration: none;
-    color: var(--white);
-    /* margin-top: 10px;
-    margin-left: 15px; */
-    margin: 10px;
-    padding-bottom: 10px;
-    padding-left: 5px;
-    border-bottom: var(--white) 1px solid;
-}
-.menu-open {
-    /* background-color: var(--color1); */
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content:space-around;
-    margin-bottom: 10px;
-}
-
-.menu-open img {
-    width: 70px;
-}
-menu a:hover {
-    background-color: var(--white-transparent);
-    transition: 0.2s;
-}
-
-#close-menu {
-    width: 30px;
-    cursor: pointer;
-}
 .menumob {
     width: 30px;
     cursor: pointer;
 }
 
-main {
+/* main {
     margin-top: 60px;
     flex-direction: column;
     width: 100%;
@@ -122,7 +72,7 @@ main {
     justify-content: center;
     flex-direction: column;
     
-}
+} */
 
 .container {
     width: 90%;
@@ -238,6 +188,7 @@ footer {
     justify-content: center;
     flex-direction: column;
 }
+
 .icons8 {
     text-decoration: underline;
     color: var(--white);
@@ -247,11 +198,12 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
     padding-bottom: 0;
 }
 
 .redesicone {
-    width: 70px;
+    width: 50px;
     margin: 10px;
 }
 
