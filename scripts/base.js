@@ -1,5 +1,2 @@
-fetch('../base.html')
-    .then(response => response.text())
-    .then(text => {
-        $('html').prepend(text)
-    })
+$('head').load('../componentes/head.html')
+$('body').load('../componentes/body.html')

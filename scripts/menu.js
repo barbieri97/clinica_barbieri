@@ -1,27 +1,20 @@
 // adiciona o link css para o funcionamento do menu
-window.addEventListener('load', () => {
-    var head = document.querySelector("head")
-    var link = document.createElement("link")
-    link.rel = 'stylesheet';
-    link.type = 'text/css';
-    link.href = '/../styles/menu.css';
-    head.appendChild(link)
+var link = $('<link>').attr({
+    'rel': 'stylesheet',
+    'type': 'text/css',
+    'href': '/../styles/menu.css'
 })
+$('head').append(link)
 
 // adiciona o html e js do menu
-fetch('../pages/menu.html')
-    .then(response => response.text())
-    .then(text => {
-        var nav = document.querySelector("nav");
-        nav.innerHTML += text;
-        var menuBtn = document.querySelector(".menumob")
-        let menu = document.querySelector('menu');
-        let close = document.querySelector("#close-menu")
-        menuBtn.addEventListener('click', () => {
-            menu.style.left = '0vw';
-            nav.style.cursor = 'auto';
-        })
-        close.addEventListener('click', () => {
-            menu.style.left = '100vw';
-        })
+$.get('../componentes/menu.html', (data, status) => {
+    $('nav').append(data)
+    $('#close-menu').click( () => {
+        $('menu').animate({left: '100vw'}, 'slow');
     })
+})
+
+$(".menumob").click( () => {
+    $('menu').animate({left: '0vw'}, 'slow');
+    $('nav').animate({cursor: 'auto'}, 'slow');
+})

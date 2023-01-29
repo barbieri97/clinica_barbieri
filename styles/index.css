@@ -116,3 +116,7 @@ section.servicos {
 .desptext {
     color: var(--white);
 }
+
+.dark .redesicone{
+    width: 40px
+}

@@ -1,0 +1,24 @@
+.infopage {
+    margin: 5%;
+}
+
+.infopage p {
+    font-size: x-large;
+}
+
+.infopage img {
+    width: 400px;
+}
+
+.infopage .ilustration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.ilustration a {
+    font-size: x-small;
+    color: var(--black);
+}
