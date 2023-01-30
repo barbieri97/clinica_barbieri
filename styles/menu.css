@@ -14,13 +14,9 @@ menu {
 
 menu a {
     font-size: larger;
-    width: 70%;
     text-decoration: none;
     color: var(--white);
-    margin: 10px;
-    padding-bottom: 10px;
-    padding-left: 5px;
-    border-bottom: var(--white) 1px solid;
+    margin: 3px;
 }
 .menu-open {
     width: 100%;
@@ -33,12 +29,18 @@ menu a {
 .menu-open img {
     width: 70px;
 }
-menu a:hover {
-    background-color: var(--white-transparent);
-    transition: 0.2s;
-}
 
 #close-menu {
     width: 30px;
     cursor: pointer;
+}
+
+menu ul {
+    width: 80%;
+    list-style: none;
+}
+
+menu li {
+    margin-bottom: 15px;
+    border-bottom: var(--white) 1px solid;
 }

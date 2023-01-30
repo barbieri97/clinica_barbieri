@@ -7,6 +7,8 @@ var link = $('<link>').attr({
 })
 $('head').append(link);
 
+$("title").append(" | Login")
+
 // adiciona html e js do index
 $.get('/../componentes/login.html', (data, status) => {
     $('main').append(data);
@@ -14,9 +16,6 @@ $.get('/../componentes/login.html', (data, status) => {
         $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
      });
     $('button').click(() => {
-        $.post('http://localhost:8000/', {
-            name: $('#username').val(),
-            senha: $('#senha').val(),
+        alert("em breve você poderá se cadastrar e aproveitar todos os beneficios online da nossa clínica!")
         })
     })
-})
