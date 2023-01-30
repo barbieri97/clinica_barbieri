@@ -6,6 +6,9 @@ var link = $('<link>').attr({
 })
 $('head').append(link);
 
+// adiciona titulo da página
+$('title').append(' | Psicoterapia de Adultos')
+
 // adiciona html e js
 $.get('/../componentes/psicoadulto.html', (data, status) => {
     $('main').append(data)

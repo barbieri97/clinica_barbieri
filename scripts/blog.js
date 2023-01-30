@@ -5,6 +5,9 @@ var link = $('<link>').attr({
 })
 $('head').append(link);
 
+// adiciona titulo da página
+$('title').append(' | Blog')
+
 // adiciona html e js do index
 $.get('/../componentes/blog.html', (data, status) => {
     $('main').html(data)

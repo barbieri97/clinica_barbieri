@@ -6,6 +6,9 @@ var link = $('<link>').attr({
 })
 $('head').append(link);
 
+// adiciona titulo da página
+$('title').append(' | Psicoterapia de Adolescentes')
+
 // adiciona html e js
 $.get('/../componentes/psicoadolescente.html', (data, status) => {
     $('main').append(data)

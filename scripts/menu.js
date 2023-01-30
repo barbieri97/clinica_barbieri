@@ -9,12 +9,12 @@ $('head').append(link)
 // adiciona o html e js do menu
 $.get('../componentes/menu.html', (data, status) => {
     $('nav').append(data)
-    $('#close-menu').click( () => {
+    $('.close-menu').click( () => {
         $('menu').animate({left: '100vw'}, 'slow');
     })
 })
 
-$(".menumob").click( () => {
+$(".menuico").click( () => {
     $('menu').animate({left: '0vw'}, 'slow');
     $('nav').animate({cursor: 'auto'}, 'slow');
 })

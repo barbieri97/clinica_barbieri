@@ -20,18 +20,16 @@
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
-#preloader {
+.preloader {
     position: fixed;
     top:0;
     left:0;
     right:0;
     bottom:0;
     background-color: var(--white);
-    z-index:999;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 1s;
 }
 
 header {
@@ -57,7 +55,7 @@ nav {
     margin-right: 20px;
 }
 
-.menumob {
+.menuico {
     width: 30px;
     cursor: pointer;
 }
@@ -73,7 +71,13 @@ main {
     flex-direction: column;    
     min-height: 500px;
 }
-
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
 .container {
     max-width: 500px;
     width: 90%;
@@ -95,37 +99,6 @@ p {
     padding-bottom: 10px;
 }
 
-
-
-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding-bottom: 10px;
-}
-
-
-.mainlogo {
-    margin: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#logo {
-    width: 200px;
-}
-
-.info {
-    margin-inline: 10%;
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
 .agendar {
     background-color: var(--button-color);
     color: var(--white);
@@ -142,33 +115,6 @@ section {
     transition: 0.5s;
     cursor: pointer;
 }
-
-section.servicos {
-    background-color: var(--color2);
-    width: 100%;
-    color: var(--white);
-}
-
-.servicesimg {
-    width: 300px;
-}
-
-.servlink {
-    text-decoration: none;
-    color: var(--white);
-    margin-top: 30px;
-}
-
-.credits{
-    text-decoration: none;
-    font-size: 8px;
-    color: var(--white);
-}
-
-.servtext {
-    color: var(--white);
-}
-
 
 .despedida {
     width: 100%;

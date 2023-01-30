@@ -6,6 +6,9 @@ var link = $('<link>').attr({
 })
 $('head').append(link);
 
+// adiciona titulo da página
+$('title').append(' | Sobre')
+
 // adiciona html e js
 $.get('/../componentes/sobre.html', (data, status) => {
     $('main').append(data)

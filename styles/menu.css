@@ -30,7 +30,7 @@ menu a {
     width: 70px;
 }
 
-#close-menu {
+menu .close-menu {
     width: 30px;
     cursor: pointer;
 }

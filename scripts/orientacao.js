@@ -6,6 +6,9 @@ var link = $('<link>').attr({
 })
 $('head').append(link);
 
+// adiciona titulo da página
+$('title').append(' | Orientação de Pais')
+
 // adiciona html e js
 $.get('/../componentes/orientacao.html', (data, status) => {
     $('main').append(data)
