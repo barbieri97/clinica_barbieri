@@ -1,5 +1,5 @@
 .infopage {
-    margin: 5%;
+    margin-bottom: 5%;
 }
 
 .infopage p {
@@ -7,7 +7,7 @@
 }
 
 .infopage img {
-    width: 400px;
+    width: 350px;
 }
 
 .infopage .ilustration {
