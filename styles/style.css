@@ -1,3 +1,4 @@
+/* Base css */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
@@ -152,4 +153,113 @@ footer {
 .redesicone {
     width: 50px;
     margin: 10px;
+}
+
+/* index css */
+
+.mainlogo {
+    margin: 10px;
+    width: 200px;
+}
+
+section.servicos {
+    background-color: var(--color2);
+    width: 100%;
+    color: var(--white);
+}
+
+.servicesimg {
+    width: 300px;
+}
+
+.servlink {
+    text-decoration: none;
+    color: var(--white);
+    margin-top: 30px;
+}
+
+.credits{
+    text-decoration: none;
+    font-size: 8px;
+    color: var(--white);
+}
+
+.servtext {
+    color: var(--white);
+}
+
+/* infopages css */
+
+.infopage {
+    margin-bottom: 5%;
+}
+
+.infopage p {
+    font-size: x-large;
+}
+
+.infopage img {
+    width: 350px;
+}
+
+.infopage .ilustration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.ilustration a {
+    font-size: x-small;
+    color: var(--black);
+}
+
+/* Menu css */
+
+menu {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content:start;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 100vw;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color1);
+}
+
+menu a {
+    font-size: larger;
+    text-decoration: none;
+    color: var(--white);
+    margin: 3px;
+}
+.menu-open {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    margin-bottom: 10px;
+}
+
+.menu-open img {
+    width: 70px;
+}
+
+menu .close-menu {
+    width: 30px;
+    cursor: pointer;
+}
+
+menu ul {
+    width: 80%;
+    list-style: none;
+}
+
+menu li {
+    margin-bottom: 15px;
+    border-bottom: var(--white) 1px solid;
 }

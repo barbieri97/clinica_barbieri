@@ -16,20 +16,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Clinica Barbieri</title>
     <link rel="icon" type="image/png" sizes="16x16" href="assets/b_favico_white.png">
-    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="/styles/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   </head>
   <body>
-    <div class="preloader">
-            <img src="/assets/preload.gif" alt="preloader">
-    </div>
+    <!-- <div class="preloader">
+            <img src="/new_assets/loader.svg" alt="preloader">
+    </div> -->
     <header>
         <a href="/"><img src="assets/logo_claro_sem_fundo.png" alt="logo" class="logonav"></a>
         <nav>
-            <img src="assets/icon_menu_dark.png" alt="menu" class="menuico">
+            <!-- <img src="assets/icon_menu_dark.png" alt="menu" class="menuico"> -->
+            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" class="menuico">
+              <rect width="50" height="50"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 10C1.5 8.89543 2.39543 8 3.5 8H46.5C47.6046 8 48.5 8.89543 48.5 10C48.5 11.1046 47.6046 12 46.5 12H3.5C2.39543 12 1.5 11.1046 1.5 10Z" fill="black"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M2 25C2 23.8954 2.89543 23 4 23H47C48.1046 23 49 23.8954 49 25C49 26.1046 48.1046 27 47 27H4C2.89543 27 2 26.1046 2 25Z" fill="black"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M1 40C1 38.8954 1.89543 38 3 38H46C47.1046 38 48 38.8954 48 40C48 41.1046 47.1046 42 46 42H3C1.89543 42 1 41.1046 1 40Z" fill="black"/>
+              </svg>              
         </nav>
+        <menu>
+          <div class="menu-open">
+              <img src="/assets/logo_escuro_sem_fundo.png" alt="logo">
+              <img src="/assets/icon-cancel.png" alt="close" class="close-menu">
+          </div>
+          <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="sobre.html">Sobre</a></li>
+              <li><a href="contato.html">Agende sua consulta</a></li>
+              <p>Serviços</p>
+              <li><a href="orientacao.html">Orientação Parental</a></li>
+              <li><a href="psicoadolescente.html">Psicoterapia para adolescentes</a></li>
+              <li><a href="psicoadulto.html">Psicoterapia para adultos</a></li>
+              <li><a href="psicoidoso.html">Psicoterapia para idosos</a></li>
+              <li><a href="psicoinfantil.html">Psicoterapia infantil</a></li>
+            </ul>
+        </menu>
     </header>
     <main>
+        <section class="apresentacao">
+        <div class="container">
+                <img class="mainlogo" src="assets/logo_claro_sem_fundo.png" alt="logo">
+            <section class="greetings">
+                <h1>Tratamentos baseados nas melhores evidências disponíveis, aplicadas por profissionais éticos e capacitados!</h1>
+                <a href="https://api.whatsapp.com/send?phone=5511993971098&text=Olá, Gostaria de mais informações sobre o atendimento." target="_blank" target="_blank"><button class="agendar">AGENDE SUA CONSULTA</button></a>
+            </section>
+        </div>
+    </section>
+    <section class="servicos">
+            <div class="container">
+                <h1 class="servtext">Confira os nossos serviços</h1>
+                    <a href="?page=psicoinfantil">
+                        <img class="servicesimg" src="/assets/kids.png" alt="kids">
+                        <a href="https://www.pexels.com/photo/a-kid-with-multicolored-hand-paint-1148998/" class="credits" target="_blank" rel="noopener noreferrer">Photo by Alexander Grey</a>
+                        <p class="servtext">Psicoterapia infaltil</p>
+                    </a>
+                    <a href="?page=psicoadolescente" class="servlink">
+                        <img class="servicesimg" src="/assets/teen.png" alt="teen">
+                        <a href="https://www.pexels.com/photo/2-boy-sitting-on-brown-floor-while-using-their-smartphone-near-woman-siiting-on-bench-using-smartphone-during-daytime-159395/" class="credits" target="_blank" rel="noopener noreferrer">Photo by Pixabay</a>
+                        <p class="servtext">Psicoterapia para adolescentes</p>
+                    </a>
+                    <a href="?page=psicoadulto" class="servlink">
+                        <img class="servicesimg" src="/assets/adults.png" alt="adults">
+                        <a href="https://www.pexels.com/photo/woman-beside-man-in-plaid-jacket-holding-umbrella-7741615/" class="credits" target="_blank" rel="noopener noreferrer">Photo by Polina Tankilevitch</a>
+                        <p class="servtext">Psicoterapia para adulto</p>
+                    </a>
+                    <a href="?page=psicoidoso" class="servlink">
+                        <img class="servicesimg" src="/assets/old.png" alt="old">
+                        <a class="credits" href="https://www.pexels.com/photo/portrait-of-a-happy-elderly-couple-5637731/" target="_blank" rel="noopener noreferrer">Photo by RODNAE Productions</a>
+                        <p class="servtext">Psicoterapia para idosos</p>
+                    </a>
+                    <a href="?page=orientacao" class="servlink">
+                        <img class="servicesimg" src="/assets/orientacao.png" alt="orientacao">
+                        <a class="credits" href="https://www.pexels.com" target="_blank" rel="noopener noreferrer">Photo by Pexels</a>
+                        <p class="servtext">Orientação de pais</p>
+                    </a>
+            </div>
+    </section>
+    <section class="divulgacaocientifica">
+        <div class="container">
+            <h1>Divulgação Científica</h1>
+            <p>A divulgação científica é um processo fundamental para garantir que as descobertas e avanços da ciência cheguem ao público em geral. É importante para aumentar a compreensão das pessoas sobre o mundo ao seu redor e seu mundo interno.  Em resumo, nossa missão é tornar a ciência acessível e interessante para todos, a fim de inspirar uma geração de cientistas e aumentar a compreensão de todos sobre a saúde mental. </p>
+            <section class="redes">
+                <a href="https://medium.com/@barbieri.psi" target="_blank"><img class="redesicone" src="assets/icons8-medium-black.png" alt="instagram"></a>
+                <a href="https://www.instagram.com/barbieri.psi" target="_blank"><img class="redesicone" src="assets/icons8-instagram-black.png" alt="instagram"></a>    
+                <a href="https://www.linkedin.com/in/andre-barbieri" target="_blank"><img class="redesicone" src="assets/icons8-linkedin-black.png" alt="instagram"></a>
+            </section>
+            <p>Siga as redes socias do nosso fundador para acompanhar esse trabalho.</p>
+        </div>
+    </section>
     </main>
     <footer>
       <section class="despedida">
@@ -47,8 +121,6 @@
         </section>
         <a href="https://icons8.com/" class="icons8" target="_blank">icons by icons8</a>
     </footer>
-    <script src="/scripts/loader.js"></script>
-    <script src="/scripts/menu.js"></script>
-    <script src="/scripts/page.js"></script>
+    <script src="/scripts/main.js"></script>
   </body>
 </html>
