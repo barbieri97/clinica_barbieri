@@ -19,10 +19,8 @@ $('#formsubmit').click((e) => {
     e.preventDefault()
     var infos = {
         nome: $('#formnome').val(),
-        idade: $('#formidade').val(),
-        email: $('#formemail').val(),
         numero: $('#formnumero').val(),
-        formaContato: $('[name=formacontato]:checked').toArray().map((c) => {
+        formaEtaria: $('[name=formetaria]:checked').toArray().map((c) => {
             return $(c).val()
         }),
         dia: $('[name=dia]:checked').toArray().map((c) => {
@@ -50,17 +48,11 @@ function emailBody(infos) {
     <h3>Nome:</h3> 
     <p>${infos.nome}</p>
     <hr>
-    <h3>Idade:</h3> 
-    <p>${infos.idade}</p>
-    <hr>
-    <h3>Email:</h3>
-    <p>${infos.email}</p>
-    <hr>
     <h3>Número:</h3>
     <p>${infos.numero}</p>
     <hr>
-    <h3>Formas de contato:</h3>
-    <p>${infos.formaContato.toString()}</p>
+    <h3>Faixa etária:</h3>
+    <p>${infos.formaEtaria.toString()}</p>
     <hr>
     <h3>Dia:</h3>
     <p>${infos.dia.toString()}</p>
