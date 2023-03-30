@@ -60,25 +60,58 @@
       </menu>
     </header>
     <main>
-        <div class="container infopage">
-            <div class="ilustration">
-                <img src="assets/sobre-ilustration.png" alt="sobre ilustration">
-                <a href="https://storyset.com/event">Event illustrations by Storyset</a>
-            </div>
-            <p>Acreditamos que o cuidado com a saúde mental não deve começar somente quando há o adoecimento, como ansiedade, depressão, bournout e etc, o cuidado deve ser diário e constante, pois a ausencia da doença não siginifica saúde!
-            </p>
-            <div class="ilustration">
-                <img src="assets/sobre-ilustration-2.png" alt="sobre ilustration">
-                <a href="https://storyset.com/event">Event illustrations by Storyset</a>
-            </div>
-            <p>Com essa visão de saúde mental mais ampla, a Clinica Barbieri foi fundada para oferecer um espaço de cuidado á saude com foco nos aspectos psicológicos, mas com o entendimento de que mente e corpo são indissociaveis, assim priorizando o trabalho interdisciplinar.</p>
-            <div class="ilustration">
-                <img src="assets/sobre-ilustration-3.png" alt="sobre ilustration">
-                <a href="https://storyset.com/event">Event illustrations by Storyset</a>
-            </div>
-            <p>Nós contamos com uma equipe de profissionais comprometidos com os deveres éticos de suas profissões e atualizados a respeito das melhores tecnologias para o tratamento de seus pacientes.</p>
-            <a href="https://api.whatsapp.com/send?phone=5511993971098&text=Olá, Gostaria de mais informações sobre o atendimento." target="_blank"><button class="agendar">AGENDE SUA CONSULTA</button></a>
-        </div>
+      <section>
+        <p>Obrigado por entrar em contato!</p>
+        <p>você pode nos mandar uma mensagem pelo whats clicando no botão abaixo.</p>
+        <a href="https://api.whatsapp.com/send?phone=5511993971098&text=Olá, Gostaria de mais informações sobre o atendimento." target="_blank"><button class="agendar">AGENDE SUA CONSULTA</button></a>
+        <p>Ou preencha o formulário abaixo que entraremos em contato com você:</p>
+        <form>
+          <p>Nome:</p>
+          <input type="text" name="nome" id="formnome" maxlength="30" placeholder="Nome" required>
+          <p>Idade:</p>
+          <input type="number" name="idade" id="formidade" placeholder="Idade" required>
+          <p>Email:</p>
+          <input type="email" name="email" id="formemail" placeholder="email" required>
+          <p>Número para contato:</p>
+          <input type="number" name="numero" id="formnumero" placeholder="contato" pattern="([0-9]){2}[0-9]{5}-[0-9]{4}" required>
+          <fieldset>
+            <p>Qual forma de contato preferencial? </p>
+            <input type="checkbox" name="formacontato" id="contatowhats" value="whats">
+            <label for="contatowhats">Whatsapp</label>
+            <input type="checkbox" name="formacontato" id="email" value="email">
+            <label for="contatowhats">Email</label>
+            <input type="checkbox" name="formacontato" id="ligacao" value="ligacao">
+            <label for="contatowhats">Ligação</label>
+          </fieldset>
+          <fieldset>
+            <p>Quais dias tem disponíveis para atendimento?</p>
+            <input type="checkbox" name="dia" id="seg" value="seg">
+            <label for="seg">Segunda</label>
+            <input type="checkbox" name="dia" id="ter" value="ter">
+            <label for="ter">Terça</label>
+            <input type="checkbox" name="dia" id="qua" value="qua">
+            <label for="qua">Quarta</label>
+            <input type="checkbox" name="dia" id="qui" value="qui">
+            <label for="qui">Quinta</label>
+            <input type="checkbox" name="dia" id="sex" value="sex">
+            <label for="sex">Sexta</label>
+            <input type="checkbox" name="dia" id="sab" value="sab">
+            <label for="sab">Sábado</label>
+          </fieldset>
+          <fieldset>
+            <p>Quais o períodos tem disponíveis para atendimento</p>
+            <input type="checkbox" name="periodo" id="manha" value="manha">
+            <label for="manha">Manhã</label>
+            <input type="checkbox" name="periodo" id="tarde" value="tarde">
+            <label for="tarde">Tarde</label>
+            <input type="checkbox" name="periodo" id="noite" value="noite">
+            <label for="noite">Noite</label>
+          </fieldset>
+          <p>Caso queira, fale um pouco sobre o motivo de procurar esse serviço.</p>
+          <textarea name="texto" id="texto" cols="30" rows="10" wrap="hard"></textarea>
+          <input type="submit" value="Enviar" id="formsubmit">
+        </form>
+      </section>
     </main>
     <footer>
       <section class="despedida">
@@ -134,5 +167,8 @@
         </section>
     </footer>
     <script src="/scripts/main.js"></script>
+    <script src="/scripts/form.js"></script>
+    <script src="http://jqueryvalidation.org/files/dist/jquery.validate.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
   </body>
 </html>

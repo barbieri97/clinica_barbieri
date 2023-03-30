@@ -6,4 +6,3 @@ $(".menuico").click( () => {
 $('menu').animate({left: '0vw'}, 'slow');
 $('nav').animate({cursor: 'auto'}, 'slow');
 })
-
