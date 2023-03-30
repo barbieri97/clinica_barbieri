@@ -188,6 +188,10 @@ section.servicos {
     color: var(--white);
 }
 
+.redes.dark svg path {
+    fill: var(--color1);
+}
+
 /* infopages css */
 
 .infopage {
@@ -262,4 +266,10 @@ menu ul {
 menu li {
     margin-bottom: 15px;
     border-bottom: var(--white) 1px solid;
+}
+
+menu ul p {
+    margin-top: 100px;
+    color: var(--white);
+    text-align: left;
 }
