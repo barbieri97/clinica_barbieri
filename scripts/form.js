@@ -58,7 +58,7 @@ function emailBody(infos) {
     <p>${infos.dia.toString()}</p>
     <hr>
     <h3>Período:</h3>
-    <p>${infos.dia.toString()}</p>
+    <p>${infos.periodo.toString()}</p>
     <hr>
     <h3>texto:</h3>
     <p>${infos.texto}</p>

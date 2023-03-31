@@ -6,3 +6,8 @@
 h2 {
     text-align: center;
 }
+
+svg {
+    width: 100px;
+    height: 100px;
+}

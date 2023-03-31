@@ -1,16 +1,34 @@
 /* index css */
 
+
 .mainlogo {
     margin: 10px;
     width: 200px;
 }
 
-section.servicos {
-    background-color: var(--color2);
-    width: 100%;
-    color: var(--white);
+.container.maior {
+    max-width: 2000px;
+}
+.servico {
+    display: grid;
+    margin-inline: 80px;
 }
 
+.servico a {
+    text-align: center;
+}
+section.servicos {
+    flex-direction: column;
+    background-image: url('/new_assets/textura2.png');
+    width: 100%;
+}
+
+.container.maior {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+}
 .servicesimg {
     width: 300px;
 }
@@ -29,4 +47,8 @@ section.servicos {
 
 .servtext {
     color: var(--white);
+}
+
+.dark path{
+    fill: var(--color1);
 }

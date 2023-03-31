@@ -1,8 +1,17 @@
 /* infopages css */
 
-.infopage {
-    margin-bottom: 5%;
+main .container {
+    max-width: 500px;
+    margin: 20px ;
+    padding: 5px;
+    box-shadow: 0px 0px 50px var(--black-transparent);
+    border-radius: 15px;
+    background-image: url('/new_assets/textura.png');
 }
+
+/* .infopage {
+    margin-bottom: 5%;
+} */
 
 .infopage p {
     font-size: x-large;
