@@ -3,6 +3,15 @@
     width: 200px;
 }
 
+main .container {
+    max-width: 500px;
+    margin: 20px ;
+    padding: 5px;
+    box-shadow: 0px 0px 50px var(--black-transparent);
+    border-radius: 15px;
+    background-image: url('/assets/textura.png');
+}
+
 h1 {
     color: var(--color1);
     margin-bottom: 50px;

@@ -6,7 +6,7 @@ main .container {
     padding: 5px;
     box-shadow: 0px 0px 50px var(--black-transparent);
     border-radius: 15px;
-    background-image: url('/new_assets/textura.png');
+    background-image: url('/assets/textura.png');
 }
 
 /* .infopage {
