@@ -118,6 +118,7 @@ p {
 
 .desptext {
     color: var(--white);
+    margin-inline: 100px;
 }
 
 footer {
