@@ -1,7 +1,7 @@
 // form funcitions
 
-// Verifica os campos
-function validate(infos) {
+    // Verifica os campos
+    function validate(infos) {
     if (infos.nome == '') {
         throw "Isira os campos necessários"
     }
