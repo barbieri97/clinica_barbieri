@@ -24,6 +24,8 @@ main .container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .servico a {
@@ -59,6 +61,6 @@ section.servicos {
     color: var(--white);
 }
 
-.dark path{
-    fill: var(--color1);
+.divulgacaocientifica p {
+    padding: 10px;
 }

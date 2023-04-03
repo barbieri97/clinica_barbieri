@@ -21,7 +21,7 @@
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
-
+/* debuging css */
 /* * {
     border: #9AEBA3 solid;
 } */
@@ -118,7 +118,7 @@ p {
 
 .desptext {
     color: var(--white);
-    margin-inline: 100px;
+    margin-inline: 10px;
 }
 
 footer {
@@ -130,11 +130,6 @@ footer {
     flex-direction: column;
 }
 
-.icons8 {
-    text-decoration: underline;
-    color: var(--white);
-    font-size: small;
-}
 .redes {
     display: flex;
     align-items: center;
@@ -146,6 +141,18 @@ footer {
 .redesicone {
     width: 50px;
     margin: 10px;
+}
+
+.botaowhats {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    z-index: 1;
+}
+
+.botaowhats svg {
+    width: 70px;
+    height: 70px;
 }
 
 

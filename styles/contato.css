@@ -17,10 +17,6 @@ h1 {
     margin-bottom: 50px;
 }
 
-svg {
-    width: 100px;
-    height: 100px;
-}
 form {
     margin-inline: 15px;
 }
@@ -76,4 +72,19 @@ span {
 
 b {
     color: red;
+}
+
+main a {
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    color: var(--white);
+    font-size: xx-large;
+    background-color: #4EB53C;
+    text-decoration: none;
+    padding: 10px;
+}
+
+main svg {
+    margin-inline: 10px;
 }
